@@ -1,0 +1,3591 @@
+C:\Users\Nathan\.jdks\openjdk-17.0.1\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.3\lib\idea_rt.jar=59438:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Nathan\IdeaProjects\test\out\production\test C4_Main
+Combien de graphes faut-il enregistrer ?
+13
+Adresse du graphe numéro 1 (fichier .txt) :
+C:\Users\Nathan\IdeaProjects\test\src\C4-Graphe-1.txt
+Adresse du graphe numéro 2 (fichier .txt) :
+C:\Users\Nathan\IdeaProjects\test\src\C4-Graphe-2.txt
+Adresse du graphe numéro 3 (fichier .txt) :
+C:\Users\Nathan\IdeaProjects\test\src\C4-Graphe-3.txt
+Adresse du graphe numéro 4 (fichier .txt) :
+C:\Users\Nathan\IdeaProjects\test\src\C4-Graphe-4.txt
+Adresse du graphe numéro 5 (fichier .txt) :
+C:\Users\Nathan\IdeaProjects\test\src\C4-Graphe-5.txt
+Adresse du graphe numéro 6 (fichier .txt) :
+C:\Users\Nathan\IdeaProjects\test\src\C4-Graphe-6.txt
+Adresse du graphe numéro 7 (fichier .txt) :
+C:\Users\Nathan\IdeaProjects\test\src\C4-Graphe-7.txt
+Adresse du graphe numéro 8 (fichier .txt) :
+C:\Users\Nathan\IdeaProjects\test\src\C4-Graphe-8.txt
+Adresse du graphe numéro 9 (fichier .txt) :
+C:\Users\Nathan\IdeaProjects\test\src\C4-Graphe-9.txt
+Adresse du graphe numéro 10 (fichier .txt) :
+C:\Users\Nathan\IdeaProjects\test\src\C4-Graphe-10.txt
+Adresse du graphe numéro 11 (fichier .txt) :
+C:\Users\Nathan\IdeaProjects\test\src\C4-Graphe-11.txt
+Adresse du graphe numéro 12 (fichier .txt) :
+C:\Users\Nathan\IdeaProjects\test\src\C4-Graphe-12.txt
+Adresse du graphe numéro 13 (fichier .txt) :
+C:\Users\Nathan\IdeaProjects\test\src\C4-Graphe-13.txt
+Quel graphe voulez vous tester ?
+1
+Matrice d'adjacence :
+
+[0.0, 1.0, 1.0, 0.0]
+[0.0, 0.0, 1.0, 1.0]
+[0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Représentation matricielle du graphe :
+
+[   0.0  ,    1.0  ,    5.0  , Infinity]
+[Infinity,    0.0  ,    3.0  ,    5.0  ]
+[Infinity, Infinity,    0.0  ,    2.0  ]
+[Infinity, Infinity, Infinity,    0.0  ]
+
+
+Initialisation Floyd-Warshall :
+
+Matrice des coûts :
+[   0.0  ,    1.0  ,    5.0  , Infinity]
+[Infinity,    0.0  ,    3.0  ,    5.0  ]
+[Infinity, Infinity,    0.0  ,    2.0  ]
+[Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 1.0, 1.0]
+[0.0, 0.0, 0.0, 2.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Itérations Foyd-Warshall :
+
+Itération 1
+Matrice des coûts :
+[   0.0  ,    1.0  ,    4.0  , Infinity]
+[Infinity,    0.0  ,    3.0  ,    5.0  ]
+[Infinity, Infinity,    0.0  ,    2.0  ]
+[Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 1.0, 1.0]
+[0.0, 0.0, 0.0, 2.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Itération 2
+Matrice des coûts :
+[   0.0  ,    1.0  ,    4.0  , 6.0]
+[Infinity,    0.0  ,    3.0  , 5.0]
+[Infinity, Infinity,    0.0  , 2.0]
+[Infinity, Infinity, Infinity, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 1.0]
+[0.0, 0.0, 1.0, 1.0]
+[0.0, 0.0, 0.0, 2.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Plus court chemin de 0 à 1 :
+0 1
+Plus court chemin de 0 à 2 :
+0 1 2
+Plus court chemin de 0 à 3 :
+0 1 3
+Plus court chemin de 1 à 2 :
+1 2
+Plus court chemin de 1 à 3 :
+1 3
+Plus court chemin de 2 à 3 :
+2 3
+Voulez-vous tester un autre graphe ? (o/n)o
+Quel graphe voulez vous tester ?
+2
+Matrice d'adjacence :
+
+[0.0, 1.0, 1.0, 0.0]
+[0.0, 0.0, 1.0, 1.0]
+[0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Représentation matricielle du graphe :
+
+[   0.0  ,    1.0  ,    5.0  , Infinity]
+[Infinity,    0.0  ,   -3.0  ,    5.0  ]
+[Infinity, Infinity,    0.0  ,    2.0  ]
+[Infinity, Infinity, Infinity,    0.0  ]
+
+
+Initialisation Floyd-Warshall :
+
+Matrice des coûts :
+[   0.0  ,    1.0  ,    5.0  , Infinity]
+[Infinity,    0.0  ,   -3.0  ,    5.0  ]
+[Infinity, Infinity,    0.0  ,    2.0  ]
+[Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 1.0, 1.0]
+[0.0, 0.0, 0.0, 2.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Itérations Foyd-Warshall :
+
+Itération 1
+Matrice des coûts :
+[   0.0  ,    1.0  ,   -2.0  , Infinity]
+[Infinity,    0.0  ,   -3.0  ,    5.0  ]
+[Infinity, Infinity,    0.0  ,    2.0  ]
+[Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 1.0, 1.0]
+[0.0, 0.0, 0.0, 2.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Itération 2
+Matrice des coûts :
+[   0.0  ,    1.0  ,   -2.0  , 6.0]
+[Infinity,    0.0  ,   -3.0  , 5.0]
+[Infinity, Infinity,    0.0  , 2.0]
+[Infinity, Infinity, Infinity, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 1.0]
+[0.0, 0.0, 1.0, 1.0]
+[0.0, 0.0, 0.0, 2.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Itération 3
+Matrice des coûts :
+[   0.0  ,    1.0  ,   -2.0  , 0.0]
+[Infinity,    0.0  ,   -3.0  , 5.0]
+[Infinity, Infinity,    0.0  , 2.0]
+[Infinity, Infinity, Infinity, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 2.0]
+[0.0, 0.0, 1.0, 1.0]
+[0.0, 0.0, 0.0, 2.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Itération 4
+Matrice des coûts :
+[   0.0  ,    1.0  ,   -2.0  ,  0.0]
+[Infinity,    0.0  ,   -3.0  , -1.0]
+[Infinity, Infinity,    0.0  ,  2.0]
+[Infinity, Infinity, Infinity,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 2.0]
+[0.0, 0.0, 1.0, 2.0]
+[0.0, 0.0, 0.0, 2.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Plus court chemin de 0 à 1 :
+0 1
+Plus court chemin de 0 à 2 :
+0 1 2
+Plus court chemin de 0 à 3 :
+0 1 2 3
+Plus court chemin de 1 à 2 :
+1 2
+Plus court chemin de 1 à 3 :
+1 2 3
+Plus court chemin de 2 à 3 :
+2 3
+Voulez-vous tester un autre graphe ? (o/n)o
+Quel graphe voulez vous tester ?
+3
+Matrice d'adjacence :
+
+[0.0, 1.0, 1.0, 0.0]
+[0.0, 0.0, 1.0, 1.0]
+[0.0, 1.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Représentation matricielle du graphe :
+
+[   0.0  ,    1.0  ,   -5.0  , Infinity]
+[Infinity,    0.0  ,   -3.0  ,    2.0  ]
+[Infinity,    4.0  ,    0.0  ,    2.0  ]
+[Infinity, Infinity, Infinity,    0.0  ]
+
+
+Initialisation Floyd-Warshall :
+
+Matrice des coûts :
+[   0.0  ,    1.0  ,   -5.0  , Infinity]
+[Infinity,    0.0  ,   -3.0  ,    2.0  ]
+[Infinity,    4.0  ,    0.0  ,    2.0  ]
+[Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 1.0, 1.0]
+[0.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Itérations Foyd-Warshall :
+
+Itération 1
+Matrice des coûts :
+[   0.0  ,    1.0  ,   -5.0  , 3.0]
+[Infinity,    0.0  ,   -3.0  , 2.0]
+[Infinity,    4.0  ,    0.0  , 2.0]
+[Infinity, Infinity, Infinity, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 1.0, 1.0]
+[0.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Itération 2
+Matrice des coûts :
+[   0.0  ,   -1.0  ,   -5.0  , 3.0]
+[Infinity,    0.0  ,   -3.0  , 2.0]
+[Infinity,    4.0  ,    0.0  , 2.0]
+[Infinity, Infinity, Infinity, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 1.0]
+[0.0, 0.0, 1.0, 1.0]
+[0.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Itération 3
+Matrice des coûts :
+[   0.0  ,   -1.0  ,   -5.0  , -3.0]
+[Infinity,    0.0  ,   -3.0  ,  2.0]
+[Infinity,    4.0  ,    0.0  ,  2.0]
+[Infinity, Infinity, Infinity,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 1.0, 1.0]
+[0.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Itération 4
+Matrice des coûts :
+[   0.0  ,   -1.0  ,   -5.0  , -3.0]
+[Infinity,    0.0  ,   -3.0  , -1.0]
+[Infinity,    4.0  ,    0.0  ,  2.0]
+[Infinity, Infinity, Infinity,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 1.0, 2.0]
+[0.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Plus court chemin de 0 à 1 :
+0 2 1
+Plus court chemin de 0 à 2 :
+0 2
+Plus court chemin de 0 à 3 :
+0 2 3
+Plus court chemin de 1 à 2 :
+1 2
+Plus court chemin de 1 à 3 :
+1 2 3
+Plus court chemin de 2 à 1 :
+2 1
+Plus court chemin de 2 à 3 :
+2 3
+Voulez-vous tester un autre graphe ? (o/n)o
+Quel graphe voulez vous tester ?
+4
+Matrice d'adjacence :
+
+[0.0, 1.0, 1.0, 0.0]
+[0.0, 0.0, 1.0, 0.0]
+[0.0, 1.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Représentation matricielle du graphe :
+
+[   0.0  ,    1.0  ,   -5.0  , Infinity]
+[Infinity,    0.0  ,    3.0  , Infinity]
+[Infinity,   -1.0  ,    0.0  ,    2.0  ]
+[Infinity, Infinity, Infinity,    0.0  ]
+
+
+Initialisation Floyd-Warshall :
+
+Matrice des coûts :
+[   0.0  ,    1.0  ,   -5.0  , Infinity]
+[Infinity,    0.0  ,    3.0  , Infinity]
+[Infinity,   -1.0  ,    0.0  ,    2.0  ]
+[Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 1.0, 0.0]
+[0.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Itérations Foyd-Warshall :
+
+Itération 1
+Matrice des coûts :
+[   0.0  ,   -6.0  ,   -5.0  , Infinity]
+[Infinity,    0.0  ,    3.0  , Infinity]
+[Infinity,   -1.0  ,    0.0  ,    2.0  ]
+[Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 0.0]
+[0.0, 0.0, 1.0, 0.0]
+[0.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Itération 2
+Matrice des coûts :
+[   0.0  ,   -6.0  ,   -5.0  ,   -3.0  ]
+[Infinity,    0.0  ,    3.0  , Infinity]
+[Infinity,   -1.0  ,    0.0  ,    2.0  ]
+[Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 1.0, 0.0]
+[0.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Itération 3
+Matrice des coûts :
+[   0.0  ,   -6.0  ,   -5.0  , -3.0]
+[Infinity,    0.0  ,    3.0  ,  5.0]
+[Infinity,   -1.0  ,    0.0  ,  2.0]
+[Infinity, Infinity, Infinity,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 1.0, 2.0]
+[0.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 0.0, 0.0]
+
+
+Plus court chemin de 0 à 1 :
+0 2 1
+Plus court chemin de 0 à 2 :
+0 2
+Plus court chemin de 0 à 3 :
+0 2 3
+Plus court chemin de 1 à 2 :
+1 2
+Plus court chemin de 1 à 3 :
+1 2 3
+Plus court chemin de 2 à 1 :
+2 1
+Plus court chemin de 2 à 3 :
+2 3
+Voulez-vous tester un autre graphe ? (o/n)o
+Quel graphe voulez vous tester ?
+5
+Matrice d'adjacence :
+
+[0.0, 1.0, 1.0, 0.0]
+[0.0, 0.0, 1.0, 1.0]
+[1.0, 1.0, 0.0, 1.0]
+[0.0, 0.0, 1.0, 0.0]
+
+
+Représentation matricielle du graphe :
+
+[   0.0  ,    1.0  , -5.0, Infinity]
+[Infinity,    0.0  , -3.0,    2.0  ]
+[   6.0  ,    4.0  ,  0.0,    2.0  ]
+[Infinity, Infinity,  2.0,    0.0  ]
+
+
+Initialisation Floyd-Warshall :
+
+Matrice des coûts :
+[   0.0  ,    1.0  , -5.0, Infinity]
+[Infinity,    0.0  , -3.0,    2.0  ]
+[   6.0  ,    4.0  ,  0.0,    2.0  ]
+[Infinity, Infinity,  2.0,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 1.0, 1.0]
+[2.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itérations Foyd-Warshall :
+
+Itération 1
+Matrice des coûts :
+[   0.0  ,    1.0  , -5.0, 3.0]
+[Infinity,    0.0  , -3.0, 2.0]
+[   6.0  ,    4.0  ,  0.0, 2.0]
+[Infinity, Infinity,  2.0, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 1.0, 1.0]
+[2.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 2
+Matrice des coûts :
+[   0.0  ,   -1.0  , -5.0, 3.0]
+[Infinity,    0.0  , -3.0, 2.0]
+[   6.0  ,    4.0  ,  0.0, 2.0]
+[Infinity, Infinity,  2.0, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 1.0]
+[0.0, 0.0, 1.0, 1.0]
+[2.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 3
+Matrice des coûts :
+[   0.0  ,   -1.0  , -5.0, -3.0]
+[Infinity,    0.0  , -3.0,  2.0]
+[   6.0  ,    4.0  ,  0.0,  2.0]
+[Infinity, Infinity,  2.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 1.0, 1.0]
+[2.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 4
+Matrice des coûts :
+[   0.0  ,   -1.0  , -5.0, -3.0]
+[   3.0  ,    0.0  , -3.0,  2.0]
+[   6.0  ,    4.0  ,  0.0,  2.0]
+[Infinity, Infinity,  2.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 2.0]
+[2.0, 0.0, 1.0, 1.0]
+[2.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 5
+Matrice des coûts :
+[   0.0  ,   -1.0  , -5.0, -3.0]
+[   3.0  ,    0.0  , -3.0, -1.0]
+[   6.0  ,    4.0  ,  0.0,  2.0]
+[Infinity, Infinity,  2.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 2.0]
+[2.0, 0.0, 1.0, 2.0]
+[2.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 6
+Matrice des coûts :
+[0.0,   -1.0  , -5.0, -3.0]
+[3.0,    0.0  , -3.0, -1.0]
+[6.0,    4.0  ,  0.0,  2.0]
+[8.0, Infinity,  2.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 2.0]
+[2.0, 0.0, 1.0, 2.0]
+[2.0, 2.0, 0.0, 2.0]
+[2.0, 0.0, 3.0, 0.0]
+
+
+Itération 7
+Matrice des coûts :
+[0.0, -1.0, -5.0, -3.0]
+[3.0,  0.0, -3.0, -1.0]
+[6.0,  4.0,  0.0,  2.0]
+[8.0,  6.0,  2.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 2.0]
+[2.0, 0.0, 1.0, 2.0]
+[2.0, 2.0, 0.0, 2.0]
+[2.0, 2.0, 3.0, 0.0]
+
+
+Plus court chemin de 0 à 1 :
+0 2 1
+Plus court chemin de 0 à 2 :
+0 2
+Plus court chemin de 0 à 3 :
+0 2 3
+Plus court chemin de 1 à 0 :
+1 2 0
+Plus court chemin de 1 à 2 :
+1 2
+Plus court chemin de 1 à 3 :
+1 2 3
+Plus court chemin de 2 à 0 :
+2 0
+Plus court chemin de 2 à 1 :
+2 1
+Plus court chemin de 2 à 3 :
+2 3
+Plus court chemin de 3 à 0 :
+3 2 0
+Plus court chemin de 3 à 1 :
+3 2 1
+Plus court chemin de 3 à 2 :
+3 2
+Voulez-vous tester un autre graphe ? (o/n)o
+Quel graphe voulez vous tester ?
+6
+Matrice d'adjacence :
+
+[0.0, 1.0, 1.0, 0.0]
+[0.0, 1.0, 1.0, 1.0]
+[1.0, 1.0, 0.0, 1.0]
+[0.0, 0.0, 1.0, 0.0]
+
+
+Représentation matricielle du graphe :
+
+[   0.0  ,    1.0  , -5.0, Infinity]
+[Infinity,   -1.0  , -3.0,    2.0  ]
+[   6.0  ,    4.0  ,  0.0,    2.0  ]
+[Infinity, Infinity,  2.0,    0.0  ]
+
+
+Initialisation Floyd-Warshall :
+
+Matrice des coûts :
+[   0.0  ,    1.0  , -5.0, Infinity]
+[Infinity,   -1.0  , -3.0,    2.0  ]
+[   6.0  ,    4.0  ,  0.0,    2.0  ]
+[Infinity, Infinity,  2.0,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0]
+[0.0, 1.0, 1.0, 1.0]
+[2.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itérations Foyd-Warshall :
+
+Itération 1
+Matrice des coûts :
+[   0.0  ,    0.0  , -5.0, Infinity]
+[Infinity,   -1.0  , -3.0,    2.0  ]
+[   6.0  ,    4.0  ,  0.0,    2.0  ]
+[Infinity, Infinity,  2.0,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 0.0, 0.0]
+[0.0, 1.0, 1.0, 1.0]
+[2.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 2
+Matrice des coûts :
+[   0.0  ,    0.0  , -5.0, 2.0]
+[Infinity,   -1.0  , -3.0, 2.0]
+[   6.0  ,    4.0  ,  0.0, 2.0]
+[Infinity, Infinity,  2.0, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 0.0, 1.0]
+[0.0, 1.0, 1.0, 1.0]
+[2.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 3
+Matrice des coûts :
+[   0.0  ,    0.0  , -5.0, 2.0]
+[Infinity,   -2.0  , -3.0, 2.0]
+[   6.0  ,    4.0  ,  0.0, 2.0]
+[Infinity, Infinity,  2.0, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 0.0, 1.0]
+[0.0, 1.0, 1.0, 1.0]
+[2.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 4
+Matrice des coûts :
+[   0.0  ,    0.0  , -5.0, 2.0]
+[Infinity,   -2.0  , -5.0, 2.0]
+[   6.0  ,    4.0  ,  0.0, 2.0]
+[Infinity, Infinity,  2.0, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 0.0, 1.0]
+[0.0, 1.0, 1.0, 1.0]
+[2.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 5
+Matrice des coûts :
+[   0.0  ,    0.0  , -5.0, 2.0]
+[Infinity,   -2.0  , -5.0, 0.0]
+[   6.0  ,    4.0  ,  0.0, 2.0]
+[Infinity, Infinity,  2.0, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 0.0, 1.0]
+[0.0, 1.0, 1.0, 1.0]
+[2.0, 2.0, 0.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 6
+Matrice des coûts :
+[   0.0  ,    0.0  , -5.0, 2.0]
+[Infinity,   -2.0  , -5.0, 0.0]
+[   6.0  ,    2.0  ,  0.0, 2.0]
+[Infinity, Infinity,  2.0, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 0.0, 1.0]
+[0.0, 1.0, 1.0, 1.0]
+[2.0, 1.0, 0.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 7
+Matrice des coûts :
+[   0.0  ,    0.0  , -5.0, 2.0]
+[Infinity,   -2.0  , -5.0, 0.0]
+[   6.0  ,    2.0  , -3.0, 2.0]
+[Infinity, Infinity,  2.0, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 0.0, 1.0]
+[0.0, 1.0, 1.0, 1.0]
+[2.0, 1.0, 1.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 8
+Matrice des coûts :
+[   0.0  ,   -3.0  , -5.0, 2.0]
+[Infinity,   -2.0  , -5.0, 0.0]
+[   6.0  ,    2.0  , -3.0, 2.0]
+[Infinity, Infinity,  2.0, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 0.0, 1.0]
+[0.0, 1.0, 1.0, 1.0]
+[2.0, 1.0, 1.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 9
+Matrice des coûts :
+[   0.0  ,   -3.0  , -8.0, 2.0]
+[Infinity,   -2.0  , -5.0, 0.0]
+[   6.0  ,    2.0  , -3.0, 2.0]
+[Infinity, Infinity,  2.0, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 1.0, 1.0]
+[0.0, 1.0, 1.0, 1.0]
+[2.0, 1.0, 1.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 10
+Matrice des coûts :
+[   0.0  ,   -3.0  , -8.0, -6.0]
+[Infinity,   -2.0  , -5.0,  0.0]
+[   6.0  ,    2.0  , -3.0,  2.0]
+[Infinity, Infinity,  2.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 1.0, 2.0]
+[0.0, 1.0, 1.0, 1.0]
+[2.0, 1.0, 1.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 11
+Matrice des coûts :
+[   0.0  ,   -3.0  , -8.0, -6.0]
+[   1.0  ,   -2.0  , -5.0,  0.0]
+[   6.0  ,    2.0  , -3.0,  2.0]
+[Infinity, Infinity,  2.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 1.0]
+[2.0, 1.0, 1.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 12
+Matrice des coûts :
+[   0.0  ,   -3.0  , -8.0, -6.0]
+[   1.0  ,   -3.0  , -5.0,  0.0]
+[   6.0  ,    2.0  , -3.0,  2.0]
+[Infinity, Infinity,  2.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 1.0]
+[2.0, 1.0, 1.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 13
+Matrice des coûts :
+[   0.0  ,   -3.0  , -8.0, -6.0]
+[   1.0  ,   -3.0  , -8.0,  0.0]
+[   6.0  ,    2.0  , -3.0,  2.0]
+[Infinity, Infinity,  2.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 1.0]
+[2.0, 1.0, 1.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 14
+Matrice des coûts :
+[   0.0  ,   -3.0  , -8.0, -6.0]
+[   1.0  ,   -3.0  , -8.0, -6.0]
+[   6.0  ,    2.0  , -3.0,  2.0]
+[Infinity, Infinity,  2.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 15
+Matrice des coûts :
+[   0.0  ,   -3.0  , -8.0, -6.0]
+[   1.0  ,   -3.0  , -8.0, -6.0]
+[   3.0  ,    2.0  , -3.0,  2.0]
+[Infinity, Infinity,  2.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 16
+Matrice des coûts :
+[   0.0  ,   -3.0  , -8.0, -6.0]
+[   1.0  ,   -3.0  , -8.0, -6.0]
+[   3.0  ,   -1.0  , -3.0,  2.0]
+[Infinity, Infinity,  2.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 17
+Matrice des coûts :
+[   0.0  ,   -3.0  , -8.0, -6.0]
+[   1.0  ,   -3.0  , -8.0, -6.0]
+[   3.0  ,   -1.0  , -6.0,  2.0]
+[Infinity, Infinity,  2.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 18
+Matrice des coûts :
+[   0.0  ,   -3.0  , -8.0, -6.0]
+[   1.0  ,   -3.0  , -8.0, -6.0]
+[   3.0  ,   -1.0  , -6.0, -4.0]
+[Infinity, Infinity,  2.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[0.0, 0.0, 3.0, 0.0]
+
+
+Itération 19
+Matrice des coûts :
+[0.0,   -3.0  , -8.0, -6.0]
+[1.0,   -3.0  , -8.0, -6.0]
+[3.0,   -1.0  , -6.0, -4.0]
+[5.0, Infinity,  2.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 0.0, 3.0, 0.0]
+
+
+Itération 20
+Matrice des coûts :
+[0.0, -3.0, -8.0, -6.0]
+[1.0, -3.0, -8.0, -6.0]
+[3.0, -1.0, -6.0, -4.0]
+[5.0,  1.0,  2.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 3.0, 0.0]
+
+
+Itération 21
+Matrice des coûts :
+[0.0, -3.0, -8.0, -6.0]
+[1.0, -3.0, -8.0, -6.0]
+[3.0, -1.0, -6.0, -4.0]
+[5.0,  1.0, -4.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 0.0]
+
+
+Itération 22
+Matrice des coûts :
+[0.0, -3.0, -8.0, -6.0]
+[1.0, -3.0, -8.0, -6.0]
+[3.0, -1.0, -6.0, -4.0]
+[5.0,  1.0, -4.0, -8.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+
+
+Itération 23
+Matrice des coûts :
+[-1.0, -3.0, -8.0, -6.0]
+[ 1.0, -3.0, -8.0, -6.0]
+[ 3.0, -1.0, -6.0, -4.0]
+[ 5.0,  1.0, -4.0, -8.0]
+
+
+Matrice des prédecesseurs :
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+
+
+Itération 24
+Matrice des coûts :
+[-1.0, -5.0, -8.0, -6.0]
+[ 1.0, -3.0, -8.0, -6.0]
+[ 3.0, -1.0, -6.0, -4.0]
+[ 5.0,  1.0, -4.0, -8.0]
+
+
+Matrice des prédecesseurs :
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+
+
+Itération 25
+Matrice des coûts :
+[-1.0, -5.0, -10.0, -6.0]
+[ 1.0, -3.0,  -8.0, -6.0]
+[ 3.0, -1.0,  -6.0, -4.0]
+[ 5.0,  1.0,  -4.0, -8.0]
+
+
+Matrice des prédecesseurs :
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+
+
+Itération 26
+Matrice des coûts :
+[-1.0, -5.0, -10.0, -14.0]
+[ 1.0, -3.0,  -8.0,  -6.0]
+[ 3.0, -1.0,  -6.0,  -4.0]
+[ 5.0,  1.0,  -4.0,  -8.0]
+
+
+Matrice des prédecesseurs :
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+
+
+Itération 27
+Matrice des coûts :
+[-1.0, -5.0, -10.0, -14.0]
+[-1.0, -3.0,  -8.0,  -6.0]
+[ 3.0, -1.0,  -6.0,  -4.0]
+[ 5.0,  1.0,  -4.0,  -8.0]
+
+
+Matrice des prédecesseurs :
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+
+
+Itération 28
+Matrice des coûts :
+[-1.0, -5.0, -10.0, -14.0]
+[-1.0, -5.0,  -8.0,  -6.0]
+[ 3.0, -1.0,  -6.0,  -4.0]
+[ 5.0,  1.0,  -4.0,  -8.0]
+
+
+Matrice des prédecesseurs :
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+
+
+Itération 29
+Matrice des coûts :
+[-1.0, -5.0, -10.0, -14.0]
+[-1.0, -5.0, -10.0,  -6.0]
+[ 3.0, -1.0,  -6.0,  -4.0]
+[ 5.0,  1.0,  -4.0,  -8.0]
+
+
+Matrice des prédecesseurs :
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+
+
+Itération 30
+Matrice des coûts :
+[-1.0, -5.0, -10.0, -14.0]
+[-1.0, -5.0, -10.0, -14.0]
+[ 3.0, -1.0,  -6.0,  -4.0]
+[ 5.0,  1.0,  -4.0,  -8.0]
+
+
+Matrice des prédecesseurs :
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+
+
+Itération 31
+Matrice des coûts :
+[-1.0, -5.0, -10.0, -14.0]
+[-1.0, -5.0, -10.0, -14.0]
+[ 1.0, -1.0,  -6.0,  -4.0]
+[ 5.0,  1.0,  -4.0,  -8.0]
+
+
+Matrice des prédecesseurs :
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+
+
+Itération 32
+Matrice des coûts :
+[-1.0, -5.0, -10.0, -14.0]
+[-1.0, -5.0, -10.0, -14.0]
+[ 1.0, -3.0,  -6.0,  -4.0]
+[ 5.0,  1.0,  -4.0,  -8.0]
+
+
+Matrice des prédecesseurs :
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+
+
+Itération 33
+Matrice des coûts :
+[-1.0, -5.0, -10.0, -14.0]
+[-1.0, -5.0, -10.0, -14.0]
+[ 1.0, -3.0,  -8.0,  -4.0]
+[ 5.0,  1.0,  -4.0,  -8.0]
+
+
+Matrice des prédecesseurs :
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+
+
+Itération 34
+Matrice des coûts :
+[-1.0, -5.0, -10.0, -14.0]
+[-1.0, -5.0, -10.0, -14.0]
+[ 1.0, -3.0,  -8.0, -12.0]
+[ 5.0,  1.0,  -4.0,  -8.0]
+
+
+Matrice des prédecesseurs :
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+
+
+Itération 35
+Matrice des coûts :
+[-1.0, -5.0, -10.0, -14.0]
+[-1.0, -5.0, -10.0, -14.0]
+[ 1.0, -3.0,  -8.0, -12.0]
+[-3.0,  1.0,  -4.0,  -8.0]
+
+
+Matrice des prédecesseurs :
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+
+
+Itération 36
+Matrice des coûts :
+[-1.0, -5.0, -10.0, -14.0]
+[-1.0, -5.0, -10.0, -14.0]
+[ 1.0, -3.0,  -8.0, -12.0]
+[-3.0, -7.0,  -4.0,  -8.0]
+
+
+Matrice des prédecesseurs :
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+
+
+Itération 37
+Matrice des coûts :
+[-1.0, -5.0, -10.0, -14.0]
+[-1.0, -5.0, -10.0, -14.0]
+[ 1.0, -3.0,  -8.0, -12.0]
+[-3.0, -7.0, -12.0,  -8.0]
+
+
+Matrice des prédecesseurs :
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+
+
+Itération 38
+Matrice des coûts :
+[-1.0, -5.0, -10.0, -14.0]
+[-1.0, -5.0, -10.0, -14.0]
+[ 1.0, -3.0,  -8.0, -12.0]
+[-3.0, -7.0, -12.0, -16.0]
+
+
+Matrice des prédecesseurs :
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+[2.0, 1.0, 1.0, 2.0]
+
+
+Le graphe possède un circuit absorbant.
+Voulez-vous tester un autre graphe ? (o/n)o
+Quel graphe voulez vous tester ?
+7
+Matrice d'adjacence :
+
+[0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Représentation matricielle du graphe :
+
+[   0.0  ,    2.0  ,   -5.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity,    3.0  ,   -3.0  ,    3.0  , Infinity, Infinity, Infinity]
+[   7.0  ,    4.0  ,    0.0  ,    3.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    2.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity,    0.0  ,    5.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity,    2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Initialisation Floyd-Warshall :
+
+Matrice des coûts :
+[   0.0  ,    2.0  ,   -5.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity,    3.0  ,   -3.0  ,    3.0  , Infinity, Infinity, Infinity]
+[   7.0  ,    4.0  ,    0.0  ,    3.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    2.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity,    0.0  ,    5.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity,    2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0]
+[2.0, 2.0, 0.0, 2.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 4.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 5.0, 5.0, 5.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itérations Foyd-Warshall :
+
+Itération 1
+Matrice des coûts :
+[   0.0  ,    2.0  ,   -5.0  ,    5.0  , Infinity, Infinity, Infinity]
+[Infinity,    3.0  ,   -3.0  ,    3.0  , Infinity, Infinity, Infinity]
+[   7.0  ,    4.0  ,    0.0  ,    3.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    2.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity,    0.0  ,    5.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity,    2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0]
+[2.0, 2.0, 0.0, 2.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 4.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 5.0, 5.0, 5.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 2
+Matrice des coûts :
+[   0.0  ,   -1.0  ,   -5.0  ,    5.0  , Infinity, Infinity, Infinity]
+[Infinity,    3.0  ,   -3.0  ,    3.0  , Infinity, Infinity, Infinity]
+[   7.0  ,    4.0  ,    0.0  ,    3.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    2.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity,    0.0  ,    5.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity,    2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0]
+[2.0, 2.0, 0.0, 2.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 4.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 5.0, 5.0, 5.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 3
+Matrice des coûts :
+[   0.0  ,   -1.0  ,   -5.0  ,   -2.0  , Infinity, Infinity, Infinity]
+[Infinity,    3.0  ,   -3.0  ,    3.0  , Infinity, Infinity, Infinity]
+[   7.0  ,    4.0  ,    0.0  ,    3.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    2.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity,    0.0  ,    5.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity,    2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 2.0, 0.0, 0.0, 0.0]
+[0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0]
+[2.0, 2.0, 0.0, 2.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 4.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 5.0, 5.0, 5.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 4
+Matrice des coûts :
+[   0.0  ,   -1.0  ,   -5.0  ,   -2.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -3.0  ,    3.0  , Infinity, Infinity, Infinity]
+[   7.0  ,    4.0  ,    0.0  ,    3.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    2.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity,    0.0  ,    5.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity,    2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 2.0, 0.0, 0.0, 0.0]
+[2.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0]
+[2.0, 2.0, 0.0, 2.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 4.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 5.0, 5.0, 5.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 5
+Matrice des coûts :
+[   0.0  ,   -1.0  ,   -5.0  ,   -2.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    1.0  ,   -3.0  ,    3.0  , Infinity, Infinity, Infinity]
+[   7.0  ,    4.0  ,    0.0  ,    3.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    2.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity,    0.0  ,    5.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity,    2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 2.0, 0.0, 0.0, 0.0]
+[2.0, 2.0, 1.0, 1.0, 0.0, 0.0, 0.0]
+[2.0, 2.0, 0.0, 2.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 4.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 5.0, 5.0, 5.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 6
+Matrice des coûts :
+[   0.0  ,   -1.0  ,   -5.0  ,   -2.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[   7.0  ,    4.0  ,    0.0  ,    3.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    2.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity,    0.0  ,    5.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity,    2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 2.0, 0.0, 0.0, 0.0]
+[2.0, 2.0, 1.0, 2.0, 0.0, 0.0, 0.0]
+[2.0, 2.0, 0.0, 2.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 4.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 5.0, 5.0, 5.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 7
+Matrice des coûts :
+[   0.0  ,   -1.0  ,   -5.0  ,   -2.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[   7.0  ,    4.0  ,    0.0  ,    3.0  , Infinity, Infinity, Infinity]
+[   9.0  , Infinity,    2.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity,    0.0  ,    5.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity,    2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 2.0, 0.0, 0.0, 0.0]
+[2.0, 2.0, 1.0, 2.0, 0.0, 0.0, 0.0]
+[2.0, 2.0, 0.0, 2.0, 0.0, 0.0, 0.0]
+[2.0, 0.0, 3.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 4.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 5.0, 5.0, 5.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 8
+Matrice des coûts :
+[   0.0  ,   -1.0  ,   -5.0  ,   -2.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[   7.0  ,    4.0  ,    0.0  ,    3.0  , Infinity, Infinity, Infinity]
+[   9.0  ,    6.0  ,    2.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity,    0.0  ,    5.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity,    2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 2.0, 0.0, 0.0, 0.0]
+[2.0, 2.0, 1.0, 2.0, 0.0, 0.0, 0.0]
+[2.0, 2.0, 0.0, 2.0, 0.0, 0.0, 0.0]
+[2.0, 2.0, 3.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 4.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 5.0, 5.0, 5.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 9
+Matrice des coûts :
+[   0.0  ,   -1.0  ,   -5.0  ,   -2.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[   7.0  ,    4.0  ,    0.0  ,    3.0  , Infinity, Infinity, Infinity]
+[   9.0  ,    6.0  ,    2.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity,    0.0  ,    5.0  ,    3.0  ]
+[Infinity, Infinity, Infinity, Infinity,    2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 2.0, 0.0, 2.0, 0.0, 0.0, 0.0]
+[2.0, 2.0, 1.0, 2.0, 0.0, 0.0, 0.0]
+[2.0, 2.0, 0.0, 2.0, 0.0, 0.0, 0.0]
+[2.0, 2.0, 3.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 4.0, 5.0]
+[0.0, 0.0, 0.0, 0.0, 5.0, 5.0, 5.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Plus court chemin de 0 à 1 :
+0 2 1
+Plus court chemin de 0 à 2 :
+0 2
+Plus court chemin de 0 à 3 :
+0 2 3
+Plus court chemin de 1 à 0 :
+1 2 0
+Plus court chemin de 1 à 2 :
+1 2
+Plus court chemin de 1 à 3 :
+1 2 3
+Plus court chemin de 2 à 0 :
+2 0
+Plus court chemin de 2 à 1 :
+2 1
+Plus court chemin de 2 à 3 :
+2 3
+Plus court chemin de 3 à 0 :
+3 2 0
+Plus court chemin de 3 à 1 :
+3 2 1
+Plus court chemin de 3 à 2 :
+3 2
+Plus court chemin de 4 à 5 :
+4 5
+Plus court chemin de 4 à 6 :
+4 5 6
+Plus court chemin de 5 à 4 :
+5 4
+Plus court chemin de 5 à 6 :
+5 6
+Voulez-vous tester un autre graphe ? (o/n)o
+Quel graphe voulez vous tester ?
+8
+Matrice d'adjacence :
+
+[0.0, 1.0, 1.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 1.0, 1.0]
+[0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Représentation matricielle du graphe :
+
+[   0.0  ,    1.0  ,    2.0  ,    1.0  , Infinity]
+[Infinity,    0.0  , Infinity, Infinity,    3.0  ]
+[Infinity, Infinity,    0.0  ,    1.0  ,    1.0  ]
+[Infinity, Infinity, Infinity,    0.0  ,    4.0  ]
+[Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Initialisation Floyd-Warshall :
+
+Matrice des coûts :
+[   0.0  ,    1.0  ,    2.0  ,    1.0  , Infinity]
+[Infinity,    0.0  , Infinity, Infinity,    3.0  ]
+[Infinity, Infinity,    0.0  ,    1.0  ,    1.0  ]
+[Infinity, Infinity, Infinity,    0.0  ,    4.0  ]
+[Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 2.0, 2.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itérations Foyd-Warshall :
+
+Itération 1
+Matrice des coûts :
+[   0.0  ,    1.0  ,    2.0  ,    1.0  , 4.0]
+[Infinity,    0.0  , Infinity, Infinity, 3.0]
+[Infinity, Infinity,    0.0  ,    1.0  , 1.0]
+[Infinity, Infinity, Infinity,    0.0  , 4.0]
+[Infinity, Infinity, Infinity, Infinity, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 2.0, 2.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 2
+Matrice des coûts :
+[   0.0  ,    1.0  ,    2.0  ,    1.0  , 3.0]
+[Infinity,    0.0  , Infinity, Infinity, 3.0]
+[Infinity, Infinity,    0.0  ,    1.0  , 1.0]
+[Infinity, Infinity, Infinity,    0.0  , 4.0]
+[Infinity, Infinity, Infinity, Infinity, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 2.0]
+[0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 2.0, 2.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Plus court chemin de 0 à 1 :
+0 1
+Plus court chemin de 0 à 2 :
+0 2
+Plus court chemin de 0 à 3 :
+0 3
+Plus court chemin de 0 à 4 :
+0 2 4
+Plus court chemin de 1 à 4 :
+1 4
+Plus court chemin de 2 à 3 :
+2 3
+Plus court chemin de 2 à 4 :
+2 4
+Plus court chemin de 3 à 4 :
+3 4
+Voulez-vous tester un autre graphe ? (o/n)o
+Quel graphe voulez vous tester ?
+9
+Matrice d'adjacence :
+
+[0.0, 1.0, 1.0, 1.0, 0.0]
+[0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 1.0, 1.0]
+[0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 1.0, 0.0, 0.0, 0.0]
+
+
+Représentation matricielle du graphe :
+
+[   0.0  ,    1.0  ,    2.0  ,    1.0  , Infinity]
+[Infinity,    2.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  ,    1.0  ]
+[Infinity, Infinity, Infinity,    0.0  ,    4.0  ]
+[Infinity,    3.0  , Infinity, Infinity,    0.0  ]
+
+
+Initialisation Floyd-Warshall :
+
+Matrice des coûts :
+[   0.0  ,    1.0  ,    2.0  ,    1.0  , Infinity]
+[Infinity,    2.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  ,    1.0  ]
+[Infinity, Infinity, Infinity,    0.0  ,    4.0  ]
+[Infinity,    3.0  , Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 2.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[0.0, 4.0, 0.0, 0.0, 0.0]
+
+
+Itérations Foyd-Warshall :
+
+Itération 1
+Matrice des coûts :
+[   0.0  ,    1.0  ,    2.0  ,    0.0  , Infinity]
+[Infinity,    2.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  ,    1.0  ]
+[Infinity, Infinity, Infinity,    0.0  ,    4.0  ]
+[Infinity,    3.0  , Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 2.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[0.0, 4.0, 0.0, 0.0, 0.0]
+
+
+Itération 2
+Matrice des coûts :
+[   0.0  ,    1.0  ,    2.0  ,    0.0  ,    3.0  ]
+[Infinity,    2.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  ,    1.0  ]
+[Infinity, Infinity, Infinity,    0.0  ,    4.0  ]
+[Infinity,    3.0  , Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 2.0]
+[0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 2.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[0.0, 4.0, 0.0, 0.0, 0.0]
+
+
+Itération 3
+Matrice des coûts :
+[   0.0  ,    1.0  ,    2.0  ,    0.0  ,    3.0  ]
+[Infinity,    2.0  , Infinity, Infinity, Infinity]
+[Infinity,    4.0  ,    0.0  ,   -2.0  ,    1.0  ]
+[Infinity, Infinity, Infinity,    0.0  ,    4.0  ]
+[Infinity,    3.0  , Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 2.0]
+[0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 4.0, 0.0, 2.0, 2.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[0.0, 4.0, 0.0, 0.0, 0.0]
+
+
+Itération 4
+Matrice des coûts :
+[   0.0  , 1.0,    2.0  ,    0.0  ,    3.0  ]
+[Infinity, 2.0, Infinity, Infinity, Infinity]
+[Infinity, 4.0,    0.0  ,   -2.0  ,    1.0  ]
+[Infinity, 7.0, Infinity,    0.0  ,    4.0  ]
+[Infinity, 3.0, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 2.0]
+[0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 4.0, 0.0, 2.0, 2.0]
+[0.0, 4.0, 0.0, 0.0, 3.0]
+[0.0, 4.0, 0.0, 0.0, 0.0]
+
+
+Plus court chemin de 0 à 1 :
+0 1
+Plus court chemin de 0 à 2 :
+0 2
+Plus court chemin de 0 à 3 :
+0 2 3
+Plus court chemin de 0 à 4 :
+0 2 4
+Plus court chemin de 2 à 1 :
+2 4 1
+Plus court chemin de 2 à 3 :
+2 3
+Plus court chemin de 2 à 4 :
+2 4
+Plus court chemin de 3 à 1 :
+3 4 1
+Plus court chemin de 3 à 4 :
+3 4
+Plus court chemin de 4 à 1 :
+4 1
+Voulez-vous tester un autre graphe ? (o/n)o
+Quel graphe voulez vous tester ?
+10
+Matrice d'adjacence :
+
+[0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 1.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0]
+[1.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Représentation matricielle du graphe :
+
+[   0.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity,    0.0  ,    2.0  , Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,    3.0  , Infinity]
+[Infinity, Infinity, Infinity,    0.0  ,   -6.0  ]
+[   0.0  , Infinity, Infinity, Infinity,    0.0  ]
+
+
+Initialisation Floyd-Warshall :
+
+Matrice des coûts :
+[   0.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity,    0.0  ,    2.0  , Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,    3.0  , Infinity]
+[Infinity, Infinity, Infinity,    0.0  ,   -6.0  ]
+[   0.0  , Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 1.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[4.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itérations Foyd-Warshall :
+
+Itération 1
+Matrice des coûts :
+[   0.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity,    0.0  ,    2.0  , Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,    3.0  , Infinity]
+[Infinity, Infinity, Infinity,    0.0  ,   -6.0  ]
+[   0.0  ,    1.0  , Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 1.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[4.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 2
+Matrice des coûts :
+[   0.0  ,    1.0  ,    3.0  , Infinity, Infinity]
+[Infinity,    0.0  ,    2.0  , Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,    3.0  , Infinity]
+[Infinity, Infinity, Infinity,    0.0  ,   -6.0  ]
+[   0.0  ,    1.0  , Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 0.0, 0.0]
+[0.0, 0.0, 1.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[4.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 3
+Matrice des coûts :
+[   0.0  ,    1.0  ,    3.0  , Infinity, Infinity]
+[Infinity,    0.0  ,    2.0  , Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,    3.0  , Infinity]
+[Infinity, Infinity, Infinity,    0.0  ,   -6.0  ]
+[   0.0  ,    1.0  ,    3.0  , Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 0.0, 0.0]
+[0.0, 0.0, 1.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[4.0, 0.0, 1.0, 0.0, 0.0]
+
+
+Itération 4
+Matrice des coûts :
+[   0.0  ,    1.0  ,    3.0  ,    6.0  , Infinity]
+[Infinity,    0.0  ,    2.0  , Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,    3.0  , Infinity]
+[Infinity, Infinity, Infinity,    0.0  ,   -6.0  ]
+[   0.0  ,    1.0  ,    3.0  , Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 2.0, 0.0]
+[0.0, 0.0, 1.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[4.0, 0.0, 1.0, 0.0, 0.0]
+
+
+Itération 5
+Matrice des coûts :
+[   0.0  ,    1.0  ,    3.0  ,    6.0  , Infinity]
+[Infinity,    0.0  ,    2.0  ,    5.0  , Infinity]
+[Infinity, Infinity,    0.0  ,    3.0  , Infinity]
+[Infinity, Infinity, Infinity,    0.0  ,   -6.0  ]
+[   0.0  ,    1.0  ,    3.0  , Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 2.0, 0.0]
+[0.0, 0.0, 1.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[4.0, 0.0, 1.0, 0.0, 0.0]
+
+
+Itération 6
+Matrice des coûts :
+[   0.0  ,    1.0  ,    3.0  , 6.0, Infinity]
+[Infinity,    0.0  ,    2.0  , 5.0, Infinity]
+[Infinity, Infinity,    0.0  , 3.0, Infinity]
+[Infinity, Infinity, Infinity, 0.0,   -6.0  ]
+[   0.0  ,    1.0  ,    3.0  , 6.0,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 2.0, 0.0]
+[0.0, 0.0, 1.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[4.0, 0.0, 1.0, 2.0, 0.0]
+
+
+Itération 7
+Matrice des coûts :
+[   0.0  ,    1.0  ,    3.0  , 6.0,    0.0  ]
+[Infinity,    0.0  ,    2.0  , 5.0, Infinity]
+[Infinity, Infinity,    0.0  , 3.0, Infinity]
+[Infinity, Infinity, Infinity, 0.0,   -6.0  ]
+[   0.0  ,    1.0  ,    3.0  , 6.0,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 2.0, 3.0]
+[0.0, 0.0, 1.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[4.0, 0.0, 1.0, 2.0, 0.0]
+
+
+Itération 8
+Matrice des coûts :
+[   0.0  ,    1.0  ,    3.0  , 6.0,    0.0  ]
+[Infinity,    0.0  ,    2.0  , 5.0,   -1.0  ]
+[Infinity, Infinity,    0.0  , 3.0, Infinity]
+[Infinity, Infinity, Infinity, 0.0,   -6.0  ]
+[   0.0  ,    1.0  ,    3.0  , 6.0,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 2.0, 3.0]
+[0.0, 0.0, 1.0, 2.0, 3.0]
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[4.0, 0.0, 1.0, 2.0, 0.0]
+
+
+Itération 9
+Matrice des coûts :
+[   0.0  ,    1.0  ,    3.0  , 6.0,  0.0]
+[Infinity,    0.0  ,    2.0  , 5.0, -1.0]
+[Infinity, Infinity,    0.0  , 3.0, -3.0]
+[Infinity, Infinity, Infinity, 0.0, -6.0]
+[   0.0  ,    1.0  ,    3.0  , 6.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 2.0, 3.0]
+[0.0, 0.0, 1.0, 2.0, 3.0]
+[0.0, 0.0, 0.0, 2.0, 3.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[4.0, 0.0, 1.0, 2.0, 0.0]
+
+
+Itération 10
+Matrice des coûts :
+[   0.0  ,    1.0  ,    3.0  , 6.0,  0.0]
+[  -1.0  ,    0.0  ,    2.0  , 5.0, -1.0]
+[Infinity, Infinity,    0.0  , 3.0, -3.0]
+[Infinity, Infinity, Infinity, 0.0, -6.0]
+[   0.0  ,    1.0  ,    3.0  , 6.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 2.0, 3.0]
+[4.0, 0.0, 1.0, 2.0, 3.0]
+[0.0, 0.0, 0.0, 2.0, 3.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[4.0, 0.0, 1.0, 2.0, 0.0]
+
+
+Itération 11
+Matrice des coûts :
+[   0.0  ,    1.0  ,    3.0  , 6.0,  0.0]
+[  -1.0  ,    0.0  ,    2.0  , 5.0, -1.0]
+[  -3.0  , Infinity,    0.0  , 3.0, -3.0]
+[Infinity, Infinity, Infinity, 0.0, -6.0]
+[   0.0  ,    1.0  ,    3.0  , 6.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 2.0, 3.0]
+[4.0, 0.0, 1.0, 2.0, 3.0]
+[4.0, 0.0, 0.0, 2.0, 3.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[4.0, 0.0, 1.0, 2.0, 0.0]
+
+
+Itération 12
+Matrice des coûts :
+[   0.0  ,    1.0  ,    3.0  , 6.0,  0.0]
+[  -1.0  ,    0.0  ,    2.0  , 5.0, -1.0]
+[  -3.0  ,   -2.0  ,    0.0  , 3.0, -3.0]
+[Infinity, Infinity, Infinity, 0.0, -6.0]
+[   0.0  ,    1.0  ,    3.0  , 6.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 2.0, 3.0]
+[4.0, 0.0, 1.0, 2.0, 3.0]
+[4.0, 0.0, 0.0, 2.0, 3.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[4.0, 0.0, 1.0, 2.0, 0.0]
+
+
+Itération 13
+Matrice des coûts :
+[ 0.0,    1.0  ,    3.0  , 6.0,  0.0]
+[-1.0,    0.0  ,    2.0  , 5.0, -1.0]
+[-3.0,   -2.0  ,    0.0  , 3.0, -3.0]
+[-6.0, Infinity, Infinity, 0.0, -6.0]
+[ 0.0,    1.0  ,    3.0  , 6.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 2.0, 3.0]
+[4.0, 0.0, 1.0, 2.0, 3.0]
+[4.0, 0.0, 0.0, 2.0, 3.0]
+[4.0, 0.0, 0.0, 0.0, 3.0]
+[4.0, 0.0, 1.0, 2.0, 0.0]
+
+
+Itération 14
+Matrice des coûts :
+[ 0.0,  1.0,    3.0  , 6.0,  0.0]
+[-1.0,  0.0,    2.0  , 5.0, -1.0]
+[-3.0, -2.0,    0.0  , 3.0, -3.0]
+[-6.0, -5.0, Infinity, 0.0, -6.0]
+[ 0.0,  1.0,    3.0  , 6.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 2.0, 3.0]
+[4.0, 0.0, 1.0, 2.0, 3.0]
+[4.0, 0.0, 0.0, 2.0, 3.0]
+[4.0, 0.0, 0.0, 0.0, 3.0]
+[4.0, 0.0, 1.0, 2.0, 0.0]
+
+
+Itération 15
+Matrice des coûts :
+[ 0.0,  1.0,  3.0, 6.0,  0.0]
+[-1.0,  0.0,  2.0, 5.0, -1.0]
+[-3.0, -2.0,  0.0, 3.0, -3.0]
+[-6.0, -5.0, -3.0, 0.0, -6.0]
+[ 0.0,  1.0,  3.0, 6.0,  0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 1.0, 2.0, 3.0]
+[4.0, 0.0, 1.0, 2.0, 3.0]
+[4.0, 0.0, 0.0, 2.0, 3.0]
+[4.0, 0.0, 1.0, 0.0, 3.0]
+[4.0, 0.0, 1.0, 2.0, 0.0]
+
+
+Plus court chemin de 0 à 1 :
+0 1
+Plus court chemin de 0 à 2 :
+0 1 2
+Plus court chemin de 0 à 3 :
+0 1 2 3
+Plus court chemin de 0 à 4 :
+0 1 2 3 4
+Plus court chemin de 1 à 0 :
+1 2 3 4 0
+Plus court chemin de 1 à 2 :
+1 2
+Plus court chemin de 1 à 3 :
+1 2 3
+Plus court chemin de 1 à 4 :
+1 2 3 4
+Plus court chemin de 2 à 0 :
+2 3 4 0
+Plus court chemin de 2 à 1 :
+2 3 4 0 1
+Plus court chemin de 2 à 3 :
+2 3
+Plus court chemin de 2 à 4 :
+2 3 4
+Plus court chemin de 3 à 0 :
+3 4 0
+Plus court chemin de 3 à 1 :
+3 4 0 1
+Plus court chemin de 3 à 2 :
+3 4 0 1 2
+Plus court chemin de 3 à 4 :
+3 4
+Plus court chemin de 4 à 0 :
+4 0
+Plus court chemin de 4 à 1 :
+4 0 1
+Plus court chemin de 4 à 2 :
+4 0 1 2
+Plus court chemin de 4 à 3 :
+4 0 1 2 3
+Voulez-vous tester un autre graphe ? (o/n)o
+Quel graphe voulez vous tester ?
+11
+Matrice d'adjacence :
+
+[0.0, 0.0, 1.0, 1.0, 0.0]
+[1.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 1.0, 1.0, 0.0, 0.0]
+
+
+Représentation matricielle du graphe :
+
+[   0.0  , Infinity,    2.0  ,    1.0  , Infinity]
+[   1.0  ,    2.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity]
+[Infinity, Infinity, Infinity,    0.0  ,    4.0  ]
+[Infinity,    3.0  ,   -1.0  , Infinity,    0.0  ]
+
+
+Initialisation Floyd-Warshall :
+
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    1.0  , Infinity]
+[   1.0  ,    2.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity]
+[Infinity, Infinity, Infinity,    0.0  ,    4.0  ]
+[Infinity,    3.0  ,   -1.0  , Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[0.0, 4.0, 4.0, 0.0, 0.0]
+
+
+Itérations Foyd-Warshall :
+
+Itération 1
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    1.0  , Infinity]
+[   1.0  ,    2.0  ,    3.0  , Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity]
+[Infinity, Infinity, Infinity,    0.0  ,    4.0  ]
+[Infinity,    3.0  ,   -1.0  , Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[0.0, 4.0, 4.0, 0.0, 0.0]
+
+
+Itération 2
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    1.0  , Infinity]
+[   1.0  ,    2.0  ,    3.0  ,    2.0  , Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity]
+[Infinity, Infinity, Infinity,    0.0  ,    4.0  ]
+[Infinity,    3.0  ,   -1.0  , Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[0.0, 4.0, 4.0, 0.0, 0.0]
+
+
+Itération 3
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    1.0  , Infinity]
+[   1.0  ,    2.0  ,    3.0  ,    2.0  , Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity]
+[Infinity, Infinity, Infinity,    0.0  ,    4.0  ]
+[   4.0  ,    3.0  ,   -1.0  , Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[1.0, 4.0, 4.0, 0.0, 0.0]
+
+
+Itération 4
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,  1.0, Infinity]
+[   1.0  ,    2.0  ,    3.0  ,  2.0, Infinity]
+[Infinity, Infinity,    0.0  , -2.0, Infinity]
+[Infinity, Infinity, Infinity,  0.0,    4.0  ]
+[   4.0  ,    3.0  ,   -1.0  ,  5.0,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[1.0, 4.0, 4.0, 0.0, 0.0]
+
+
+Itération 5
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,  0.0, Infinity]
+[   1.0  ,    2.0  ,    3.0  ,  2.0, Infinity]
+[Infinity, Infinity,    0.0  , -2.0, Infinity]
+[Infinity, Infinity, Infinity,  0.0,    4.0  ]
+[   4.0  ,    3.0  ,   -1.0  ,  5.0,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[1.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[1.0, 4.0, 4.0, 0.0, 0.0]
+
+
+Itération 6
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,  0.0, Infinity]
+[   1.0  ,    2.0  ,    3.0  ,  1.0, Infinity]
+[Infinity, Infinity,    0.0  , -2.0, Infinity]
+[Infinity, Infinity, Infinity,  0.0,    4.0  ]
+[   4.0  ,    3.0  ,   -1.0  ,  5.0,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[1.0, 1.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[1.0, 4.0, 4.0, 0.0, 0.0]
+
+
+Itération 7
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,  0.0, Infinity]
+[   1.0  ,    2.0  ,    3.0  ,  1.0, Infinity]
+[Infinity, Infinity,    0.0  , -2.0, Infinity]
+[Infinity, Infinity, Infinity,  0.0,    4.0  ]
+[   4.0  ,    3.0  ,   -1.0  , -3.0,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[1.0, 1.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[1.0, 4.0, 4.0, 2.0, 0.0]
+
+
+Itération 8
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,  0.0,    4.0  ]
+[   1.0  ,    2.0  ,    3.0  ,  1.0, Infinity]
+[Infinity, Infinity,    0.0  , -2.0, Infinity]
+[Infinity, Infinity, Infinity,  0.0,    4.0  ]
+[   4.0  ,    3.0  ,   -1.0  , -3.0,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 3.0]
+[1.0, 1.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[1.0, 4.0, 4.0, 2.0, 0.0]
+
+
+Itération 9
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,  0.0,    4.0  ]
+[   1.0  ,    2.0  ,    3.0  ,  1.0,    5.0  ]
+[Infinity, Infinity,    0.0  , -2.0, Infinity]
+[Infinity, Infinity, Infinity,  0.0,    4.0  ]
+[   4.0  ,    3.0  ,   -1.0  , -3.0,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 3.0]
+[1.0, 1.0, 0.0, 2.0, 3.0]
+[0.0, 0.0, 0.0, 2.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[1.0, 4.0, 4.0, 2.0, 0.0]
+
+
+Itération 10
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,  0.0, 4.0]
+[   1.0  ,    2.0  ,    3.0  ,  1.0, 5.0]
+[Infinity, Infinity,    0.0  , -2.0, 2.0]
+[Infinity, Infinity, Infinity,  0.0, 4.0]
+[   4.0  ,    3.0  ,   -1.0  , -3.0, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 3.0]
+[1.0, 1.0, 0.0, 2.0, 3.0]
+[0.0, 0.0, 0.0, 2.0, 3.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[1.0, 4.0, 4.0, 2.0, 0.0]
+
+
+Itération 11
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,  0.0, 4.0]
+[   1.0  ,    2.0  ,    3.0  ,  1.0, 5.0]
+[Infinity, Infinity,    0.0  , -2.0, 2.0]
+[Infinity, Infinity, Infinity,  0.0, 4.0]
+[   4.0  ,    3.0  ,   -1.0  , -3.0, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0]
+[1.0, 1.0, 0.0, 2.0, 3.0]
+[0.0, 0.0, 0.0, 2.0, 3.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[1.0, 4.0, 4.0, 2.0, 0.0]
+
+
+Itération 12
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,  0.0, 4.0]
+[   1.0  ,    2.0  ,    3.0  ,  1.0, 5.0]
+[   6.0  , Infinity,    0.0  , -2.0, 2.0]
+[Infinity, Infinity, Infinity,  0.0, 4.0]
+[   4.0  ,    3.0  ,   -1.0  , -3.0, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0]
+[1.0, 1.0, 0.0, 2.0, 3.0]
+[1.0, 0.0, 0.0, 2.0, 3.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[1.0, 4.0, 4.0, 2.0, 0.0]
+
+
+Itération 13
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,  0.0, 4.0]
+[   1.0  ,    2.0  ,    3.0  ,  1.0, 5.0]
+[   6.0  ,    5.0  ,    0.0  , -2.0, 2.0]
+[Infinity, Infinity, Infinity,  0.0, 4.0]
+[   4.0  ,    3.0  ,   -1.0  , -3.0, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0]
+[1.0, 1.0, 0.0, 2.0, 3.0]
+[1.0, 4.0, 0.0, 2.0, 3.0]
+[0.0, 0.0, 0.0, 0.0, 3.0]
+[1.0, 4.0, 4.0, 2.0, 0.0]
+
+
+Itération 14
+Matrice des coûts :
+[0.0,    7.0  ,    2.0  ,  0.0, 4.0]
+[1.0,    2.0  ,    3.0  ,  1.0, 5.0]
+[6.0,    5.0  ,    0.0  , -2.0, 2.0]
+[8.0, Infinity, Infinity,  0.0, 4.0]
+[4.0,    3.0  ,   -1.0  , -3.0, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0]
+[1.0, 1.0, 0.0, 2.0, 3.0]
+[1.0, 4.0, 0.0, 2.0, 3.0]
+[1.0, 0.0, 0.0, 0.0, 3.0]
+[1.0, 4.0, 4.0, 2.0, 0.0]
+
+
+Itération 15
+Matrice des coûts :
+[0.0, 7.0,    2.0  ,  0.0, 4.0]
+[1.0, 2.0,    3.0  ,  1.0, 5.0]
+[6.0, 5.0,    0.0  , -2.0, 2.0]
+[8.0, 7.0, Infinity,  0.0, 4.0]
+[4.0, 3.0,   -1.0  , -3.0, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0]
+[1.0, 1.0, 0.0, 2.0, 3.0]
+[1.0, 4.0, 0.0, 2.0, 3.0]
+[1.0, 4.0, 0.0, 0.0, 3.0]
+[1.0, 4.0, 4.0, 2.0, 0.0]
+
+
+Itération 16
+Matrice des coûts :
+[0.0, 7.0,  2.0,  0.0, 4.0]
+[1.0, 2.0,  3.0,  1.0, 5.0]
+[6.0, 5.0,  0.0, -2.0, 2.0]
+[8.0, 7.0,  3.0,  0.0, 4.0]
+[4.0, 3.0, -1.0, -3.0, 0.0]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0]
+[1.0, 1.0, 0.0, 2.0, 3.0]
+[1.0, 4.0, 0.0, 2.0, 3.0]
+[1.0, 4.0, 4.0, 0.0, 3.0]
+[1.0, 4.0, 4.0, 2.0, 0.0]
+
+
+Plus court chemin de 0 à 1 :
+0 2 3 4 1
+Plus court chemin de 0 à 2 :
+0 2
+Plus court chemin de 0 à 3 :
+0 2 3
+Plus court chemin de 0 à 4 :
+0 2 3 4
+Plus court chemin de 1 à 0 :
+1 0
+Plus court chemin de 1 à 2 :
+1 0 2
+Plus court chemin de 1 à 3 :
+1 0 2 3
+Plus court chemin de 1 à 4 :
+1 0 2 3 4
+Plus court chemin de 2 à 0 :
+2 3 4 1 0
+Plus court chemin de 2 à 1 :
+2 3 4 1
+Plus court chemin de 2 à 3 :
+2 3
+Plus court chemin de 2 à 4 :
+2 3 4
+Plus court chemin de 3 à 0 :
+3 4 1 0
+Plus court chemin de 3 à 1 :
+3 4 1
+Plus court chemin de 3 à 2 :
+3 4 2
+Plus court chemin de 3 à 4 :
+3 4
+Plus court chemin de 4 à 0 :
+4 1 0
+Plus court chemin de 4 à 1 :
+4 1
+Plus court chemin de 4 à 2 :
+4 2
+Plus court chemin de 4 à 3 :
+4 2 3
+Voulez-vous tester un autre graphe ? (o/n)0
+Quel graphe voulez vous tester ?
+12
+Matrice d'adjacence :
+
+[0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Représentation matricielle du graphe :
+
+[   0.0  , Infinity,    2.0  ,    1.0  , Infinity, Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  , Infinity, Infinity,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[Infinity,    3.0  ,   -1.0  , Infinity,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Initialisation Floyd-Warshall :
+
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    1.0  , Infinity, Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  , Infinity, Infinity,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[Infinity,    3.0  ,   -1.0  , Infinity,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[0.0, 4.0, 4.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itérations Foyd-Warshall :
+
+Itération 1
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    1.0  , Infinity, Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  , Infinity,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[Infinity,    3.0  ,   -1.0  , Infinity,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[0.0, 4.0, 4.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 2
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    1.0  , Infinity, Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  ,    2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[Infinity,    3.0  ,   -1.0  , Infinity,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[0.0, 4.0, 4.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 3
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    1.0  , Infinity, Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  ,    2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  , Infinity,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 4
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    1.0  , Infinity, Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  ,    2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,    5.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 5
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    0.0  , Infinity, Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  ,    2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,    5.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 6
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    0.0  , Infinity, Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  ,    1.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,    5.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 7
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    0.0  , Infinity, Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  ,    1.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 8
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  ,    1.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 9
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  ,    1.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 10
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  ,    1.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 11
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,    1.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 12
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 13
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  , Infinity,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 14
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 15
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  , Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 16
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  ,    7.0  ,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 17
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  ,    7.0  ,    3.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 18
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  ,    7.0  ,    3.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,   -1.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 19
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  ,    7.0  ,    3.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -1.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,   -1.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 20
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  ,    7.0  ,    3.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -1.0  ,    0.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,   -1.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 21
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  ,    7.0  ,    3.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -1.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,   -1.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 22
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  ,    7.0  ,    3.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -1.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -3.0  ,   -1.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 23
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  ,    7.0  ,    3.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -1.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -3.0  ,   -2.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 24
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  ,    7.0  ,    3.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -1.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -3.0  ,   -2.0  ,   -4.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Le graphe possède un circuit absorbant.
+Voulez-vous tester un autre graphe ? (o/n)0
+Quel graphe voulez vous tester ?
+12
+Matrice d'adjacence :
+
+[0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Représentation matricielle du graphe :
+
+[   0.0  , Infinity,    2.0  ,    1.0  , Infinity, Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  , Infinity, Infinity,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[Infinity,    3.0  ,   -1.0  , Infinity,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Initialisation Floyd-Warshall :
+
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    1.0  , Infinity, Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  , Infinity, Infinity,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[Infinity,    3.0  ,   -1.0  , Infinity,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[0.0, 4.0, 4.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itérations Foyd-Warshall :
+
+Itération 1
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    1.0  , Infinity, Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  , Infinity,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[Infinity,    3.0  ,   -1.0  , Infinity,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[0.0, 4.0, 4.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 2
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    1.0  , Infinity, Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  ,    2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[Infinity,    3.0  ,   -1.0  , Infinity,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[0.0, 4.0, 4.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 3
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    1.0  , Infinity, Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  ,    2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  , Infinity,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 4
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    1.0  , Infinity, Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  ,    2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,    5.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 5
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    0.0  , Infinity, Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  ,    2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,    5.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 6
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    0.0  , Infinity, Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  ,    1.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,    5.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 7
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    0.0  , Infinity, Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  ,    1.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 8
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  ,    1.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  , Infinity, Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 9
+Matrice des coûts :
+[   0.0  , Infinity,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  ,    1.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 0.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 10
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    3.0  ,    1.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 11
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,    1.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 12
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 13
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  , Infinity,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 14
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 15
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  , Infinity,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 16
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  ,    7.0  ,    7.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 3.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 17
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  ,    7.0  ,    3.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 0.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 18
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  ,    7.0  ,    3.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,   -1.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 19
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  ,    7.0  ,    3.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -1.0  ,    1.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,   -1.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 20
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  ,    7.0  ,    3.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -1.0  ,    0.0  , Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,   -1.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 21
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  ,    7.0  ,    3.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -1.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -2.0  ,   -1.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 22
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  ,    7.0  ,    3.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -1.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -3.0  ,   -1.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 23
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  ,    7.0  ,    3.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -1.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -3.0  ,   -2.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Itération 24
+Matrice des coûts :
+[   0.0  ,    7.0  ,    2.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   1.0  ,    0.0  ,    0.0  ,   -2.0  ,    1.0  , Infinity, Infinity, Infinity]
+[   6.0  ,    5.0  ,    0.0  ,   -2.0  ,    2.0  , Infinity, Infinity, Infinity]
+[   8.0  ,    7.0  ,    3.0  ,    0.0  ,    4.0  , Infinity, Infinity, Infinity]
+[   4.0  ,    3.0  ,   -1.0  ,   -3.0  ,    0.0  , Infinity, Infinity, Infinity]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -1.0  ,    0.0  ,   -2.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity,   -3.0  ,   -2.0  ,   -4.0  ]
+[Infinity, Infinity, Infinity, Infinity, Infinity, Infinity, Infinity,    0.0  ]
+
+
+Matrice des prédecesseurs :
+[0.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 4.0, 2.0, 1.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 0.0, 2.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 0.0, 3.0, 0.0, 0.0, 0.0]
+[1.0, 4.0, 4.0, 2.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 6.0, 5.0, 6.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Le graphe possède un circuit absorbant.
+Voulez-vous tester un autre graphe ? (o/n)n
+
+Process finished with exit code 0

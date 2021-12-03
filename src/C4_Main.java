@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class C4_Main {
 
     //0-VARIABLES STATIQUES
     static String[] cheminsGraphe;
