@@ -1,9 +1,11 @@
 # EFREI_L3_Projet_Graphes
 Implémentation de l'algortihme de Floyd-Warshall (recherche des plus courts chemins dans un graphe) en Java.
+
 Les graphes sont représentés dans un fichier txt sous cette forme :
 Ligne 1 : nombre de sommets
 Ligne 2 : nombre d'arcs
 Lignes suivantes : numéro du sommet initial, numéro du sommet final, valeur de l'arc.
+
 Avec ce modèle de fichier, s’il contient le texte suivant:
 4
 5
